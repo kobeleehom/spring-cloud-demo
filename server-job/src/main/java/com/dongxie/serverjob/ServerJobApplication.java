@@ -21,7 +21,7 @@ public class ServerJobApplication {
 
     @RequestMapping("/desc")
     public String getServerDesc() {
-        return "I am log server, my server port is :" + port;
+        return "I am job server, my server port is :" + port;
     }
 
 }

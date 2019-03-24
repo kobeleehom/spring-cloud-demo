@@ -21,7 +21,7 @@ public class ServerHelloApplication {
     String port;
 
     @RequestMapping("/hello")
-    public String home(@RequestParam(value = "name", defaultValue = "test") String name) {
+    public String hello(@RequestParam(value = "name", defaultValue = "test") String name) {
         return "hello " + name + ", my server port is :" + port;
     }
 

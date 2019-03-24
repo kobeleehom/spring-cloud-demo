@@ -1,9 +1,9 @@
 server:
-  port: 8882
+  port: 8883
 
 spring:
   application:
-    name: server-job
+    name: consumer-ribbon
 
 eureka:
   client:

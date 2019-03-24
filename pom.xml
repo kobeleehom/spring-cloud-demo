@@ -17,8 +17,8 @@
 
     <modules>
         <module>eureka-server</module>
-        <module>service-hello</module>
-        <module>service-log</module>
+        <module>server-hello</module>
+        <module>server-job</module>
     </modules>
 
     <properties>

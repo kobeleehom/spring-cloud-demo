@@ -19,6 +19,7 @@
         <module>eureka-server</module>
         <module>server-hello</module>
         <module>server-job</module>
+        <module>consumer-ribbon</module>
     </modules>
 
     <properties>

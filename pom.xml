@@ -20,6 +20,7 @@
         <module>server-hello</module>
         <module>server-job</module>
         <module>consumer-ribbon</module>
+        <module>consumer-feign</module>
     </modules>
 
     <properties>

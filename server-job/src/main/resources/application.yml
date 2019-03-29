@@ -5,6 +5,7 @@ spring:
   application:
     name: server-job
 
+
 eureka:
   client:
     serviceUrl:

@@ -4,6 +4,9 @@ server:
 spring:
   application:
     name: consumer-ribbon
+  #链路追踪配置
+  zipkin:
+    base-url: http://localhost:9411
 
 eureka:
   client:

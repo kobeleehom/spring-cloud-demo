@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class ConfigController {
 
-    @Value("${foo}")
-    String foo;
+    @Value("${version}")
+    String version;
 
     @RequestMapping(value = "/getConfig")
     public String getConfig() {
-        return foo;
+        return version;
     }
 }

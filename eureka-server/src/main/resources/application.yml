@@ -1,15 +1,18 @@
-server:
-  port: 8880
 
-eureka:
-#  instance:
-#    hostname: localhost
-  client:
-    registerWithEureka: false
-    fetchRegistry: false
-    serviceUrl:
-      defaultZone: http://localhost:${server.port}/eureka/
+#server:
+#  port: 8880
+#
+#eureka:
+##  instance:
+##    hostname: localhost
+#  client:
+#    registerWithEureka: false
+#    fetchRegistry: false
+#    serviceUrl:
+#      defaultZone: http://localhost:${server.port}/eureka/
 
 spring:
   application:
     name: eureka-server
+  profiles:
+    active: serv2

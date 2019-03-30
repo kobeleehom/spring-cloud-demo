@@ -19,7 +19,8 @@ public class HelloService {
     @HystrixCommand(fallbackMethod = "helloError")
     public String getHello(String name) {
         logger.error("追踪..调用服务之前.ribbon..");
-        return restTemplate.getForObject("http://consumer-feign/getHello?name=" + name, String.class);
+        return restTemplate.getForObject("http://server-hello/hello?name={name}", String.class, name);
+//        return restTemplate.getForObject("http://consumer-feign/getHello?name=" + name, String.class);
     }
 
     public String helloError(String name) {

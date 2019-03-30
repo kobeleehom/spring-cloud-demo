@@ -17,7 +17,7 @@ public class HelloController {
 
     @RequestMapping("/hello")
     public String hello(@RequestParam(value = "name", defaultValue = "test") String name) {
-        logger.info("server hello in ...");
+        logger.info("server hello in ...{}",name);
         return "hello " + name + ", my server port is :" + port;
     }
 }

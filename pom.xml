@@ -25,6 +25,7 @@
         <module>config-server</module>
         <module>config-client</module>
         <module>dashboard-turbine</module>
+        <module>gateway-server</module>
     </modules>
 
     <properties>

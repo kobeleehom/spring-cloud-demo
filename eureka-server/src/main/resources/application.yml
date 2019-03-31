@@ -15,4 +15,4 @@ spring:
   application:
     name: eureka-server
   profiles:
-    active: serv2
+    active: serv1

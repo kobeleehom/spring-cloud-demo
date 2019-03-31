@@ -1,0 +1,26 @@
+
+server:
+  port: 8889
+
+spring:
+  application:
+    name: gateway-server
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          # 打开了之后可以直接根据服务名加后缀调用
+          enabled: false
+          lowerCaseServiceId: true
+      routes:
+      - id: server-hello
+        uri: lb://server-hello
+        predicates:
+        - Path=/gateway/**
+        filters:
+        - StripPrefix=1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8880/eureka/

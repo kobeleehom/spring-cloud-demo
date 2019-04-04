@@ -19,3 +19,9 @@ zuul:
     api-b:
       path: /api/feign/**
       serviceId: consumer-feign
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

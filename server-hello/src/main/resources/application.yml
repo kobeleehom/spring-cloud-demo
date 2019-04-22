@@ -8,6 +8,24 @@ spring:
   zipkin:
     base-url: http://localhost:9411
 
+#  mail:
+#    host: smtp.qq.com
+#    username: 1017306227@qq.com #自己的邮箱
+#    password: svgxmozpurtcbehc #邮箱的授权码
+#    properties:
+#      mail:
+#        smtp:
+#          auth: true   #安全认证(默认是true)
+#          starttls:
+#            enable: true
+#            required: true
+#  boot:
+#    admin:
+#      notify:
+#        mail:
+#          to: guanxb@163.com
+#          from: 1017306227@qq.com
+
 eureka:
   client:
     serviceUrl:

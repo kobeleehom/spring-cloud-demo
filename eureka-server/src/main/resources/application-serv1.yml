@@ -8,5 +8,7 @@ eureka:
     registerWithEureka: false
     fetchRegistry: false
     serviceUrl:
-      defaultZone: http://peer2:8870/eureka/
+#      defaultZone: http://peer2:8870/eureka/
+      defaultZone: http://peer1:8870/eureka/
+
 

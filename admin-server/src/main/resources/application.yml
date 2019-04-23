@@ -21,6 +21,11 @@ spring:
         mail:
           to: guanxb@163.com
           from: 1017306227@qq.com
+        #钉钉群推送
+        dingtalk:
+          enabled: true
+          webhook-token: https://oapi.dingtalk.com/robot/send?access_token=fde9cd362550fb085b89a2373e26fb4689eeb9e330e9be013a445d7bd8bca2fe
+
 eureka:
   instance:
 #    leaseRenewalIntervalInSeconds: 10
@@ -37,3 +42,6 @@ management:
     web:
       exposure:
         include: "*"
+  endpoint:
+    health:
+      show-details: always
